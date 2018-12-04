@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-MAVEN_USERNAME="mvn_user"
-MAVEN_PASSWORD="mvn_pass"
-EMAIL_USERNAME="mail_user"
-EMAIL_PASSWORD="mail_pass"
-EMAIL_HOST="mail_host"
-EMAIL_TO="mail_to"
-BUILD_GRADLE_FILE="../app/build.gradle"
+#MAVEN_USERNAME="mvn_user"
+#MAVEN_PASSWORD="mvn_pass"
+#EMAIL_USERNAME="mail_user"
+#EMAIL_PASSWORD="mail_pass"
+#EMAIL_HOST="mail_host"
+#EMAIL_TO="mail_to"
 
+BUILD_GRADLE_FILE="../app/build.gradle"
 FILES=`(pwd)`/publish-apk.gradle
 
 
