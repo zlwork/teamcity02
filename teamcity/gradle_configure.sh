@@ -7,13 +7,6 @@
 #EMAIL_HOST="mail_host"
 #EMAIL_TO="mail_to"
 
-
-echo "this is it:$NOTES"
-
-exit 1
-
-
-
 cd teamcity
 BUILD_GRADLE_FILE="../app/build.gradle"
 FILES=`(pwd)`/publish-apk.gradle
