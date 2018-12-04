@@ -7,6 +7,7 @@
 #EMAIL_HOST="mail_host"
 #EMAIL_TO="mail_to"
 
+cd teamcity
 BUILD_GRADLE_FILE="../app/build.gradle"
 FILES=`(pwd)`/publish-apk.gradle
 
