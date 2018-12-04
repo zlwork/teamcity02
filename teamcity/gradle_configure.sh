@@ -40,10 +40,12 @@ create_include_conf(){
     cp git_log.sh ../git_log.sh
     replay_set "MAVEN_USERNAME" $MAVEN_USERNAME $FILES
     replay_set "MAVEN_PASSWORD" $MAVEN_PASSWORD $FILES
+    replay_set "MAVEN_URL" $MAVEN_URL $FILES
     replay_set "EMAIL_USERNAME" $EMAIL_USERNAME $FILES
     replay_set "EMAIL_PASSWORD" $EMAIL_PASSWORD $FILES
     replay_set "EMAIL_HOST" $EMAIL_HOST $FILES
     replay_set "EMAIL_TO" $EMAIL_TO $FILES
+    
 }
 
 
