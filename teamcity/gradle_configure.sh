@@ -7,6 +7,19 @@
 #EMAIL_HOST="mail_host"
 #EMAIL_TO="mail_to"
 
+curl -o lastBuild.tmp "http://ci.it-olimp-tomsk.com:8080/app/rest/buildTypes/id:bt2/builds/status:SUCCESS" --user rest:rest
+last_commit=`xpath lastBuild.tmp  '/build/revisions/revision/@version'| awk -F"\"" '{print $2}'`
+
+echo "##Last commit = $last_commit"
+# prepare build notes
+NOTES=`git log --pretty=format:"- %s" $last_commit..origin/master`
+
+echo "this is it:$NOTES"
+
+exit 1
+
+
+
 cd teamcity
 BUILD_GRADLE_FILE="../app/build.gradle"
 FILES=`(pwd)`/publish-apk.gradle
